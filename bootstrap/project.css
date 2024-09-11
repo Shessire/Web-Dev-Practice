@@ -1,0 +1,9 @@
+#navbarNavAltMarkup a {
+    color: black;
+    font-size: 1em;
+    transition: all 0.15s;
+}
+
+#navbarNavAltMarkup a:hover {
+    color: rgb(89, 167, 167);
+}
