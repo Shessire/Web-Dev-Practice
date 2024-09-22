@@ -8,8 +8,6 @@ I’ll be adding more features and sections in the future as I continue building
 Feel free to explore and check back for updates as the project evolves! 😀
 </p>
 
-&nbsp;&nbsp;
-
 
 <img align="right" alt="playgroundImage" src="https://i.pinimg.com/originals/39/e8/8b/39e88bfd10e4a9b19bd90b7bf0c0aa88.gif" width="300"></img>
 
