@@ -7,7 +7,6 @@ app.get('/r/:subreddit/:postId', (req,res) => {
     res.send(`<h1>Viewing from Port: ${postId} on the ${subreddit} subreddit</h1>`)
 })
 
-
 app.get('/cats', (req, res) => {
     res.send('MEOW!!')
 })
@@ -21,7 +20,7 @@ app.get('/dogs', (req,res) => {
 })
 
 app.get('/', (req, res) => {
-    res.send('This is the main page');
+    res.send('Welcome to the main page');
 })
 
 app.get('*', (req,res) => {
