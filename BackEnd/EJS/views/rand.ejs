@@ -7,5 +7,17 @@
 </head>
 <body>
     <h1>Random Number: <%= num %></h1>
+
+    //Conditionals in EJS
+    //Every line with JS needs tags
+
+    <% if(num % 2 === 0) { %>
+        <h3>This is EVEN number</h3>
+    <%} else { %>
+        <h3>This is ODD number</h3>
+    <%} %>
+
+    //With ternary
+    <h3><%= num % 2 === 0 ? "EVEN" : "ODD" %></h3>
 </body>
 </html>
