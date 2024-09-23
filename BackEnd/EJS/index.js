@@ -10,6 +10,17 @@ app.get('/', (req,res) => {
     res.render('home')
 })
 
+app.get('/r/:subreddit', (req,res) => {
+    const { subreddit } = req.params;
+    res.render('subreddit', {subreddit});
+})
+
+app.get('/rand', (req,res) => {
+    const num = Math.floor(Math.random() * 100) + 1
+    res.render('rand', { num });
+    //can be res.render('rand', {random: num}) and you can put random to rand.ejs
+})
+
 app.listen(3000, () => {
     console.log('LISTENING ON PORT 3000')
 })
