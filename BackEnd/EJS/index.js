@@ -21,6 +21,13 @@ app.get('/rand', (req,res) => {
     //can be res.render('rand', {random: num}) and you can put random to rand.ejs
 })
 
+app.get('/cats', (req,res) => {
+    const cats = [
+        "Blue", "Monty", "Daniel", "Stephanie", "Winston"
+    ]
+    res.render('cats', { cats });
+})
+
 app.listen(3000, () => {
     console.log('LISTENING ON PORT 3000')
 })
