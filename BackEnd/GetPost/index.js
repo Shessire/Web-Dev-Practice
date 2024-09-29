@@ -26,9 +26,32 @@ const comments = [
     }
 ]
 
+//Displays all comments
 app.get('/comments', (req,res) => {
     res.render('comments/index', { comments });
 })
+
+//Form to Create New Comment
+app.get('/comments/new', (req,res) => {
+    res.render('comments/new')
+})
+
+//Creates New comment
+app.post('/comments', (req,res) => {
+    const { username, comment } = req.body;
+    comments.push({ username, comment })
+    res.redirect('/comments');
+})
+
+
+
+
+
+
+
+
+
+
 
 app.get('/tacos', (req,res) => {
     res.send('Get /tacos')
