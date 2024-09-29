@@ -16,3 +16,11 @@ app.post('/tacos', (req,res) => {
 app.listen(3000, () => {
     console.log("ON PORT 3000")
 })
+
+
+// RESTful
+// GET /comments - List all comments
+// POST /comments/:id - Create one comment
+// GET /comments/:id - Get one comment
+// PATCH /comments/:id - Update one comment
+// DELETE /comments/:id - Delete one comment
