@@ -85,7 +85,6 @@ app.delete('/comments/:id', (req,res) => {
 
 
 
-//Ignore this
 app.get('/tacos', (req,res) => {
     res.send('Get /tacos')
 })
@@ -94,7 +93,6 @@ app.post('/tacos', (req,res) => {
     const { meat, qty } = req.body;
     res.send(`Here is your ${qty} ${meat} taco(s)`)
 })
-//Ignore this
 
 app.listen(3000, () => {
     console.log("ON PORT 3000")
