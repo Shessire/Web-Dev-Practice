@@ -37,8 +37,20 @@ const productSchema = new mongoose.Schema({
 
 const Product = mongoose.model('Product', productSchema)
 
-const bike = new Product({name: 'Bike Helmet', price: 29.50, categories: ["Accessories", "Safety"]})
-bike.save()
+// const bike = new Product({name: 'Tire Pump', price: 19.50, categories: ["Cycling"]})
+// bike.save()
+// .then(data => {
+//     console.log("IT WORKED")
+//     console.log(data)
+// })
+// .catch(err => {
+//     console.log("ERROR")
+//     console.log(err)
+// })
+
+
+//We need runValidators: true to tell Mongoose that we'd like to still keep the validations after the update :)
+Product.findOneAndUpdate({name: 'Tire Pump'}, {price: 9.99}, {new: true, runValidators: true})
 .then(data => {
     console.log("IT WORKED")
     console.log(data)
