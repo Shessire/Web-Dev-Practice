@@ -44,9 +44,15 @@ productSchema.methods.toggleOnSale = function() {
     return this.save();
 }
 
+//.methods are called for individual instance. Need to fetch it first
 productSchema.methods.addCategory = function(newCat) {
     this.categories.push(newCat);
     return this.save()
+}
+
+//.statics are called for model constructor itself. Multiple documents at once
+productSchema.statics.fireSale = function() {
+    return this.updateMany({}, { onSale: true, price: 0})
 }
 
 const Product = mongoose.model('Product', productSchema)
@@ -60,6 +66,8 @@ const findProduct = async () => {
         console.log(foundProduct)
 
 }
+
+Product.fireSale().then(res => console.log(res));
 
 // const bike = new Product({name: 'Cycling Jersey', price: 28.50, categories: ["Cycling"]})
 // bike.save()
