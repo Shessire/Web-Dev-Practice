@@ -39,10 +39,11 @@ const Movie = mongoose.model('Movie', movieSchema)
 //   })
 
 //Movie.find({}).then(data => console.log(data))
-//Movie.updateMany({title: {$in: ['Amadeus', 'Stand By me']}}, {score: 10}).then(res => console.log(res))
 
+//Movie.updateMany({title: {$in: ['Amadeus', 'Stand By me']}}, {score: 10}).then(res => console.log(res))
 //To get the object of updated version. new: true to get to post-update. Without it will be pre-update.
 //Movie.findOneAndUpdate({title: 'The Iron Giant'}, {score: 7.8}, {new: true}).then(m => console.log(m))
 
-//To get the object of deleted data
 //Movie.deleteMany({year: {$gte: 1999}}).then(msg => console.log(msg))
+//To get the object of deleted data
+//Movie.findOneAndDelete({title: 'Alien'}).then(msg => console.log(msg))
