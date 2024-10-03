@@ -37,3 +37,5 @@ Movie.insertMany([
     console.log("IT WORKED")
     console.log(data)
   })
+
+//Movie.find({}).then(data => console.log(data))
