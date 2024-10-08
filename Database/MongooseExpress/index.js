@@ -20,6 +20,12 @@ app.get('/products', async (req,res) => {
     res.render('products/index', { products })
 })
 
+app.get('/products/:id', async (req,res) => {
+    const { id } = req.params;
+    const product = await Product.findById(id);
+    res.render('products/show', { product })
+})
+
 app.listen(3000, () => {
     console.log("APP IS RUNNING ON PORT 3000")
 })
