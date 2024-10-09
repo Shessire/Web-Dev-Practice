@@ -55,6 +55,12 @@ app.put('/products/:id', async (req,res) => {
     res.redirect(`/products/${product._id}`)
 })
 
+app.delete('/products/:id', async (req,res) => {
+    const { id } = req.params;
+    const deleteProduct = await Product.findByIdAndDelete(id)
+    res.redirect('/products')
+})
+
 app.listen(3000, () => {
     console.log("APP IS RUNNING ON PORT 3000")
 })
