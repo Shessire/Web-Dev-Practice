@@ -4,6 +4,16 @@ const morgan = require('morgan');
 
 app.use(morgan('dev'))
 
+app.use((req,res,next) => {
+    console.log("First")
+    return next()
+})
+
+app.use((req,res,next) => {
+    console.log('Second')
+    return next();
+})
+
 app.get('/', (req,res) => {
     res.send('Home Page')
 })
