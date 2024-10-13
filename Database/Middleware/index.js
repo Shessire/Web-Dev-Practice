@@ -10,7 +10,7 @@ app.use((req,res,next) => {
     next()
 })
 
-app.use((req,res,next) => {
+const verify = ((req,res,next) => {
     const { password } = req.query;
     if(password === "iknowpassword"){
         next()
@@ -33,7 +33,7 @@ app.get('/dogs', (req,res) => {
     res.send('Woof')
 })
 
-app.get('/secret', (req,res) => {
+app.get('/secret', verify, (req,res) => {
     res.send("I eat sugar a lot")
 })
 
