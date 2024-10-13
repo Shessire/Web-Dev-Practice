@@ -10,6 +10,14 @@ app.use((req,res,next) => {
     next()
 })
 
+app.use((req,res,next) => {
+    const { password } = req.query;
+    if(password === "iknowpassword"){
+        next()
+    }
+    res.send("You need password for this")
+})
+
 app.use('/dogs', (req,res,next) => {
     console.log("I LOVE DOGS")
     next();
@@ -23,6 +31,10 @@ app.get('/', (req,res) => {
 app.get('/dogs', (req,res) => {
     console.log(`Request Date: ${req.requestTime}`)
     res.send('Woof')
+})
+
+app.get('/secret', (req,res) => {
+    res.send("I eat sugar a lot")
 })
 
 app.use((req,res) => {
