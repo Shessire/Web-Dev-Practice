@@ -15,7 +15,8 @@ const verify = ((req,res,next) => {
     if(password === "iknowpassword"){
         next()
     }
-    res.send("You need password for this")
+    // res.send("You need password for this");
+    throw new Error("Password required")
 })
 
 app.use('/dogs', (req,res,next) => {
