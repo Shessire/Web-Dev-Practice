@@ -3,7 +3,7 @@ function Die() {
 
     return (
         <>
-            <h1>Die Roll: {roll}</h1>
+            <h2>Die Roll: {roll}</h2>
         </>
     )
 }
