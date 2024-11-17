@@ -1,13 +1,11 @@
 import './App.css'
-import PokeId from './PokeId'
+import Greeter from './Greeter'
 
 function App() {
   
   return (
     <>
-      <PokeId/>
-      <PokeId/>
-      <PokeId/>
+      <Greeter person="Bill" />
     </>
   )
 }
