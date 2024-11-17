@@ -1,13 +1,13 @@
 import './App.css'
-import Die from './Die';
-import DiceRolls from './DiceRolls';
+import PokeId from './PokeId'
 
 function App() {
   
   return (
     <>
-      <DiceRolls/>
-      <DiceRolls/>
+      <PokeId/>
+      <PokeId/>
+      <PokeId/>
     </>
   )
 }

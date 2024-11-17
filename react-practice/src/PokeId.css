@@ -1,0 +1,12 @@
+.PokeId {
+    border: 1px solid blue;
+    padding: 20px;
+}
+
+.PokeId h1 {
+    color: blue;
+}
+
+.PokeId img {
+    width: 150px;
+}
