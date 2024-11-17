@@ -1,5 +1,6 @@
 function Dog() {
-    return <p>WOOF!!</p>
+    const pet = "abc"
+    return <p>{pet} says WOOF!!</p>
 }
 
 function add(x,y) {
