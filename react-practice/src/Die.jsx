@@ -1,10 +1,10 @@
+import "./Die.css";
+
 function Die() {
     const roll = Math.floor((Math.random() * 6)) + 1;
 
     return (
-        <>
-            <h2>Die Roll: {roll}</h2>
-        </>
+        <h2 className="Die">Die Roll: {roll}</h2>
     )
 }
 
