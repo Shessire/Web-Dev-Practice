@@ -4,6 +4,7 @@ import Die2 from './Die2'
 import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
 import Heading from './heading'
+import ColorList from './ColorList'
 
 function App() {
   
@@ -15,7 +16,8 @@ function App() {
       <Die2/>
       <Die2 numSides={10}/>
       <ListPicker values={[1,2,3]}/> */}
-      <DoubleDice/>
+      <ColorList colors={["red", "pink", "purple", "teal"]}/>
+      {/* <DoubleDice/> */}
     </>
   )
 }
