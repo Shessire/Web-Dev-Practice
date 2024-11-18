@@ -3,11 +3,13 @@ import Greeter from './Greeter'
 import Die2 from './Die2'
 import ListPicker from './ListPicker'
 import DoubleDice from './DoubleDice'
+import Heading from './heading'
 
 function App() {
   
   return (
     <>
+      <Heading color="magenta" text="welcome!"/>
       {/* <Greeter person="Bill"/>
       <Die2 numSides={20}/>
       <Die2/>
