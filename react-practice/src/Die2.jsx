@@ -1,4 +1,4 @@
-function Die2 ({ numSides }) {
+function Die2 ({ numSides = 6 }) {
     const roll = Math.floor(Math.random() * numSides) + 1
 
     return (

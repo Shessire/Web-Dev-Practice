@@ -6,9 +6,9 @@ function App() {
   
   return (
     <>
-      <Greeter person="Bill" from="me"/>
+      <Greeter person="Bill"/>
       <Die2 numSides={20}/>
-      <Die2 numSides={6}/>
+      <Die2/>
       <Die2 numSides={10}/>
     </>
   )

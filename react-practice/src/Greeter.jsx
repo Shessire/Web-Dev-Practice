@@ -1,4 +1,4 @@
-function Greeter({person, from}) {
+function Greeter({person, from = "anonymous"}) {
     return (
     <>
         <h1>HELLO, {person}!</h1>
