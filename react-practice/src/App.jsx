@@ -31,8 +31,9 @@ function App() {
   
   return (
     <>
-      <Form />
-      <Clicker />
+      {/* <Form /> */}
+      <Clicker message="HI!" buttonText="Please Click Me"/>
+      <Clicker message="Please Stop Clicking Me" buttonText="Do Not Click Me"/>
       {/* <PropertyList properties={properties} /> */}
       {/* <ShoppingList items={data}/> */}
       {/* <Slots val1="🍒" val2="🍒" val3="🍒"/>
