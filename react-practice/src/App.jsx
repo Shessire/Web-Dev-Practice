@@ -13,6 +13,8 @@ import Form from './Form'
 import Counter from './Counter'
 import Toggler from './Toggler'
 import ToggleCounter from './ToggleCounter'
+import ColorBox from './ColorBox'
+import ColorBoxGrid from './ColorBoxGrid'
 
 const data = [
   {id: 1,item: 'eggs', quantity: 12, completed: false},
@@ -30,11 +32,16 @@ const properties = [
   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 ];
 
+const colors = [
+  "red", "blue", "yellow", "green", "orange", "pink", "purple", "lightgreen", "lightblue"
+]
+
 function App() {
   
   return (
     <>
-      <ToggleCounter />
+      <ColorBoxGrid colors={colors}/>
+      {/* <ToggleCounter /> */}
       {/* <Toggler /> */}
       {/* <Counter /> */}
       {/* <Form /> */}
