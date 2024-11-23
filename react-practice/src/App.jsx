@@ -32,6 +32,7 @@ function App() {
   
   return (
     <>
+      <Counter />
       {/* <Form /> */}
       {/* <Clicker message="HI!" buttonText="Please Click Me"/>
       <Clicker message="Please Stop Clicking Me" buttonText="Do Not Click Me"/> */}
