@@ -19,6 +19,14 @@ function EmojiClicker () {
         })
     }
 
+    const makeHeart = () => {
+        setEmojis(prevEmojis => {
+            return prevEmojis.map(e => {
+                return {...e, emoji: "♥"}
+            })
+        })
+    }
+
     return (
         <div>
             {emojis.map((e) => (
@@ -30,6 +38,7 @@ function EmojiClicker () {
                 </span>
             ))}
             <button onClick={addEmoji}>Add Emoji</button>
+            <button onClick={makeHeart}>Make 'em all hearts</button>
         </div>
     )
 }
