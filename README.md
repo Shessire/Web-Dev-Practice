@@ -28,6 +28,6 @@ Feel free to explore and check back for updates as the project evolves! 😀
 
 Although this repository contains code chunks and learning exercises, more features and projects will be added in the future as I continue expanding my knowledge of the MERN stack.
 
-*------------- Many more to come, hopefully --------------*
+*------------- Many more to come on the way --------------*
 
 
