@@ -3,7 +3,7 @@ import { useState } from "react";
 function SignupForm () {
 
     const [firstName, setFirstName] = useState("")
-    const [lastName, setLastname] = useState("")
+    const [lastName, setLastName] = useState("")
 
     const updateFirstName = (evt) => {
         setFirstName(evt.target.value);
