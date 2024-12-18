@@ -1,12 +1,12 @@
 import './App.css'
-import RatingDemo from './RatingDemo'
 import FormDemo from './FormDemo'
+import ButtonAppBar from './Navbar'
 
 function App() {
 
   return (
     <>
-      <RatingDemo />
+      <ButtonAppBar />
       <FormDemo />
     </>
   )

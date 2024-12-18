@@ -1,6 +1,7 @@
 import TextField from '@mui/material/TextField';
-import { useState } from 'react';
 import Slider from '@mui/material/Slider';
+import Box from '@mui/material/Box';
+import { useState } from 'react';
 
 function FormDemo () {
 
@@ -16,7 +17,7 @@ function FormDemo () {
     }
 
     return (
-        <div>
+        <Box sx={{ border: "1px solid red", p: 6 }}>
             <h1>Name is: {name}</h1>
             <TextField 
                 id="outlined-basic" 
@@ -31,7 +32,7 @@ function FormDemo () {
                 value={volume} 
                 onChange={updateVolume} 
             />
-        </div>
+        </Box>
     )
 }
 
